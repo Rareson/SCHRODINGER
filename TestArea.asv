@@ -1,3 +1,4 @@
+%% This m-file is used for testing ideas, not part of the toolbox.
 %% Comments
 %> <start.m> is the starting file for the Schrodinger program.
 %> This is a set of files which gives access to some rough and ready MATLAB
@@ -18,10 +19,9 @@ clear all;
 close all;
 global Q1;
 
-figure('Color',[0.313725490196078 0.313725490196078 0.313725490196078]);
 axis('off'); axis([0 1 0 1]);
 t1=title('Welcome to Schrodinger!');
-set(t1,'FontSize',24,'Color',[0.870588235294118 0.92156862745098 0.980392156862745]); 
+set(t1,'FontSize',24); 
 ww = {' This set of MATLAB programs solves the Schroedinger equation, '
 ' in 1D, for a choice of potentials and boundary conditions. '
 ' The methods used are: numerical integration and adaption to boundary  '
@@ -38,15 +38,16 @@ f=uicontrol('Style','text','Units','normalized','FontSize',9,...
 'String',ww, 'HorizontalAlignment','left','Position',xy,...
 'BackgroundColor',[.9 .9 .9]);
 %% buttons
-%bbutt is a user-defined function designed for blue boxes.
-bbutt([.15  .38  .35  .06],'Numerical integration','close;integrat')
-bbutt([.15  .31  .35  .06],'Particle in a box','close; inbox;')
-bbutt([.15  .24  .35  .06],'Wave packets','close;wavepac')
-bbutt([.15  .17  .35  .06],'Bound states','close;boundst')
-bbutt([.15  .1   .35  .06],'Periodic potentials','close;per1d')
-bbutt([.55  .38  .35  .06],'Scattering in 1D','close;scatt')
-bbutt([.55  .31  .35  .06],'Scattering in 2D and 3D','close;scatt3d')
-bbutt([.55  .24  .35  .06],'Special functions','close;special')
-bbutt([.55  .17  .35  .06],'Hydrogen atom','close;hatom')
-%qbutt is a user-defined function designed for quit boxes.
-qbutt([.55  .1   .35  .06],'QUIT','close')
+%rbutt is a user-defined function. Originally designed for red boxes,
+%customized by Rareson to display
+rbutt([.15  .38  .35  .06],'Numerical integration','close;integrat')
+rbutt([.15  .31  .35  .06],'Particle in a box','close; inbox;')
+rbutt([.15  .24  .35  .06],'Wave packets','close;wavepac')
+rbutt([.15  .17  .35  .06],'Bound states','close;boundst')
+rbutt([.15  .1   .35  .06],'Periodic potentials','close;per1d')
+rbutt([.55  .38  .35  .06],'Scattering in 1D','close;scatt')
+rbutt([.55  .31  .35  .06],'Scattering in 2D and 3D','close;scatt3d')
+rbutt([.55  .24  .35  .06],'Special functions','close;special')
+rbutt([.55  .17  .35  .06],'Hydrogen atom','close;hatom')
+%bbutt is a user-defined function
+bbutt([.55  .1   .35  .06],'QUIT','close')

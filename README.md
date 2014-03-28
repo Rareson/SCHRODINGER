@@ -18,3 +18,15 @@ GUI structure change.
 Function correction.
 
 Finished
+
+Toolbox used
+GUI Layout Toolbox documentation Version: 1.17 by Ben Tordoff and David Sampson 
+
+Inspired by
+Undocumented Matlab http://undocumentedmatlab.com/
+GUIs_FEX by Matt Fig
+ButtonGroup by Matthew Whitaker
+jControl by Malcolm Lidierth and King's College London
+
+Deleted Functions
+text0.m

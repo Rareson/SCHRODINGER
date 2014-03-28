@@ -1,3 +1,4 @@
+%% This m-file is used for testing ideas, not part of the toolbox.
 %% Comments
 %> <start.m> is the starting file for the Schrodinger program.
 %> This is a set of files which gives access to some rough and ready MATLAB
